@@ -1,0 +1,52 @@
+.container{
+    background-color: lightgray;
+    width: 800px;
+    height: 150px;
+}
+/* PRIMO QUADRATO */
+.square1{
+    width: 100px ;
+    height: 100px;
+    border: solid red;
+    transition: 3s;
+}
+
+.square1:hover{
+    background-color: red;
+}
+
+/* SECONDO QUADRATO */
+.square2{
+    width: 100px ;
+    height: 100px;
+    background-color: red;
+    transition: 3s;
+}
+
+.square2:hover{
+    width: 200px;   
+}
+
+/* TERZO QUADRATO */
+.square3{
+    width: 100px ;
+    height: 100px;
+    background-color: red;
+    transition: 3s;
+}
+
+.square3:hover{
+    border-radius: 50px;
+}
+
+/* QAURTO QUADRATO */
+.square4{
+    width: 100px ;
+    height: 100px;
+    background-color: red;
+    transition: 3s;
+}
+
+.square4:hover{
+    background-color: lightgrey;    
+}
