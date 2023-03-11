@@ -2,6 +2,7 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: 3s;
 }
 
 .ex-1-square:hover{
@@ -11,6 +12,7 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: 3s;
 }
 .ex-2-square:hover{
     width: 300px;
@@ -19,6 +21,7 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: 3s;
 }
 .ex-3-square:hover{
     border-radius: 50px;
@@ -39,6 +42,7 @@
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: 3s;
 }
 
 .ex-6-img:hover{
@@ -117,7 +121,23 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    background-color: blue;
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: rettangoloUno;
+    animation-duration: 3s;
+}
+
+@keyframes rettangoloUno{
+    0% { 
+        top: -10px;
+        left: 10%;}
+    100% {left: 75%; 
+          top: -10px;}
+}
+
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -125,4 +145,81 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    background-color: aqua;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: rettangoloDue;
+    animation-duration: 3s;
+}
+
+@keyframes rettangoloDue{
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 75%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: rettangoloTre;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rettangoloTre{
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+
+    50%{
+        top: -10px;
+        left: 75%;
+    }
+
+    80%{
+        top: 60px;
+        left: 75%;
+    }
+
+    100%{
+        top: 60px;
+        left: 55%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: rettangoloQuattro;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rettangoloQuattro{
+     0%{
+        bottom: -10%;
+        right: 20%;
+     }
+
+     50%{
+        bottom: -10%;
+        right: 75%;
+     }
+
+     80%{
+        bottom: 60px;
+        right: 75%;
+     }
+
+     100%{
+        bottom: 60px;
+        right: 65%;
+     }
 }
